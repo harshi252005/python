@@ -1,0 +1,9 @@
+def happy(n):
+      a=set()
+      while n!=1:
+            n=sum(int(digit)**2 for digit in str(n))
+            if n in a:
+                return False
+            a.add(n)
+      return True
+print(happy(19))
