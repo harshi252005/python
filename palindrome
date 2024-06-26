@@ -1,0 +1,16 @@
+def pal(n):
+      if isinstance(n,int):
+            xstr=str(n)
+            return xstr==xstr[::-1]
+      return False
+n=int(input("Enter any number:"))
+print(pal(n))
+
+'''
+def pal(n):
+    if n==n[::-1]:
+        return True
+    else:
+        return False
+n=str(input("Enter string:"))
+print(pal(n))
