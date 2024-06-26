@@ -1,0 +1,13 @@
+class Solution(object):
+   def findPeakElement(self, nums):
+      low = 0
+      high = len(nums)-1
+      while low<high:
+         mid = low + (high - low+1)//2
+         if (mid-1>=0 and nums[mid-1]<=nums[mid]):
+            low = mid
+         else:
+            high = mid-1
+      return nums[low+1]
+ob1 = Solution()
+print(ob1.findPeakElement([15,35,85,96,5,6,8,12]))
