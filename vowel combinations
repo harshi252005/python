@@ -1,0 +1,4 @@
+def c(n):
+    return(n+1)*(n+2)*(n+3)*(n+4)//24
+n=int(input("Enter any number:"))
+print(c(n))
