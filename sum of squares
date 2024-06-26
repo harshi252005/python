@@ -1,0 +1,18 @@
+def sumsquare(l):
+    odd_sum = 0
+    even_sum = 0
+    for num in l:
+        num = int(num)
+        if num % 2 == 0:
+            even_sum += num ** 2
+        else:
+            odd_sum += num ** 2
+    return [odd_sum, even_sum]
+
+n=int(input("Enter size:"))
+arr=[]
+for i in range(n):
+      element=input("Enter element:")
+      arr.append(element)
+
+print(sumsquare([int(i) for i in arr]))
